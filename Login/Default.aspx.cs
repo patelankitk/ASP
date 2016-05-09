@@ -17,6 +17,9 @@ public partial class _Default : System.Web.UI.Page
     protected void ButtonSubmit_Click(object sender, EventArgs e)
     {
         LabelSubmit.Text = "Your Registration was successful.!";
+        TextBoxEmail.Text = string.Empty;
+        TextBoxName.Text = string.Empty;
+        DropDownListCountry.Text = string.Empty;
     }
 
     protected void DropDownListCountry_SelectedIndexChanged(object sender, EventArgs e)

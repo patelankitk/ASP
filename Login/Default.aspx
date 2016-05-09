@@ -57,6 +57,7 @@
                 <td class="auto-style10">
                     <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="*Password Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBoxPassword" ControlToValidate="TextBoxPassword1" ErrorMessage="Both of the Password should match."></asp:CompareValidator>
                 </td>
             </tr>
             <tr>
@@ -313,7 +314,7 @@
                         <asp:ListItem Value="ZM">Zambia</asp:ListItem>
                         <asp:ListItem Value="ZW">Zimbabwe</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorCountry" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="*Country Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorCountry" runat="server" ControlToValidate="DropDownListCountry" ErrorMessage="*Country Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
