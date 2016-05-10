@@ -43,19 +43,4 @@
         </UpdateParameters>
     </asp:SqlDataSource>
     <br />
-    <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateInsertButton="True" AutoGenerateRows="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DefaultMode="Insert" Height="50px" Width="185px">
-        <EditRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
-        <Fields>
-            <asp:DynamicField DataField="ID" HeaderText="ID" />
-            <asp:DynamicField DataField="Name" HeaderText="Name" />
-            <asp:DynamicField DataField="Address" HeaderText="Address" />
-            <asp:DynamicField DataField="City" HeaderText="City" />
-            <asp:DynamicField DataField="Post Code" HeaderText="Post Code" />
-            <asp:DynamicField DataField="Phone" HeaderText="Phone" />
-        </Fields>
-        <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
-        <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
-        <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
-        <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
-    </asp:DetailsView>
 </asp:Content>
