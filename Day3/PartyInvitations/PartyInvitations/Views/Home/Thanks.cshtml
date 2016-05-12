@@ -2,6 +2,22 @@
 
 @{
     ViewBag.Title = "Thanks";
+    try
+    {
+        WebMail.SmtpServer = "smtp.mail.yahoo.com";
+        WebMail.SmtpPort = 465;
+        WebMail.EnableSsl = true;
+        WebMail.UserName = "patelankitk@yahoo.com";
+        WebMail.Password = "";
+        WebMail.From = "rsvps@example.com";
+
+        WebMail.Send("patelankitk@yahoo.com", "RSVP Notification", Model.Name + "is" + ((Model.WillAttend ?? false) ?  "" : "not ") + "attending");
+    }
+    catch (Exception)
+    {
+
+        @:<b> Sorry - We couldnt send the email to confirm your RSVP.</b>
+    }
 }
 
 <h2>Thank you,@Model.Name</h2>
